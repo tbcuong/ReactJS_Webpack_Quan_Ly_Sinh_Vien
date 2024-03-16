@@ -1,0 +1,91 @@
+/* import React, { useState, useEffect } from 'react';
+import './table.css';
+
+function Table1() {
+  const [students, setStudents] = useState([]);
+  const [newStudent, setNewStudent] = useState({
+    name: '',
+    date: '',
+    mssv: '',
+    email: '',
+    score: '',
+    locate: '',
+  });
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/posts');
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const data = await response.json();
+      setStudents(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  const handleDeleteRow = (id) => {
+    // Implement confirmation dialog before deletion
+    const confirmed = window.confirm('Are you sure you want to delete this student record?');
+    if (confirmed) {
+      const updatedStudents = students.filter(student => student.id !== id);
+      setStudents(updatedStudents);
+    }
+  };
+
+  const handleUpdateRow = (student) => {
+    setNewStudent(student);
+  };
+
+  const updateStudent = () => {
+    const updatedStudents = students.map(s => (s.id === newStudent.id ? newStudent : s));
+    setStudents(updatedStudents);
+    setNewStudent({
+      name: '',
+      date: '',
+      mssv: '',
+      email: '',
+      score: '',
+      locate: '',
+    });
+  };
+
+  const addStudent = () => {
+    // Implement input validation before adding a new student
+    if (newStudent.name.trim() === '' || newStudent.email.trim() === '') {
+      alert('Name and email are required fields');
+      return;
+    }
+    const studentWithId = { ...newStudent, id: students.length + 1 };
+    setStudents([...students, studentWithId]);
+    setNewStudent({
+      name: '',
+      date: '',
+      mssv: '',
+      email: '',
+      score: '',
+      locate: '',
+    });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setNewStudent({
+      ...newStudent,
+      [name]: value,
+    });
+  };
+
+  return (
+    <div className="table-container">
+      {/* Your table rendering code */
+    /* </div>
+  );
+}
+
+/* export default Table1;  */

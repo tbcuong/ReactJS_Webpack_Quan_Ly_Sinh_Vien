@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": "9cdc",
+      "name": "John Doe",
+      "date": "1998-05-15",
+      "mssv": "20210001",
+      "email": "john.doe@example.com",
+      "score": "85",
+      "locate": "New York"
+    },
+    {
+      "id": "3cab",
+      "name": "Alice Smith",
+      "date": "1999-02-20",
+      "mssv": "20210002",
+      "email": "alice.smith@example.com",
+      "score": "90",
+      "locate": "Los Angeles"
+    },
+    {
+      "id": "8dcb",
+      "name": "Bob Johnson",
+      "date": "1997-11-10",
+      "mssv": "20210003",
+      "email": "bob.johnson@example.com",
+      "score": "75",
+      "locate": "Chicago"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+.heading {
+  color: green ;
+  text-align: center;
+}
+
+center-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thName {
+  width: 300px;
+  padding: 10px; 
+}
+table {
+  border-collapse: collapse;
+  width: 90%; /* Adjust the width as needed */
+  margin: 0 auto
+}
+
+th, td {
+  border: 0.1px solid rgb(238, 231, 231);
+  padding: 10px;
+  text-align: center;
+}
+.tr2:hover {background-color: rgb(254, 250, 249);}
+th {
+  background-color: #e8e9ef;
+}
+.table1 {
+  border-collapse: collapse;
+  margin-top: 35px
+ 
+}
+.table2 {
+  margin-top: 300px;
+}
+.input-row {
+  grid-column: 1 / -1; /* Ô input sẽ trải qua toàn bộ cột của bảng */
+}
+
+.button1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  width: 120px; /* Đặt chiều rộng của nút */
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: green 
+}
+input{
+  width: 100%; /* Thiết lập chiều rộng cho ô input */
+  height: 100%; /* Thiết lập chiều cao cho ô input */
+  border: none; /* Loại bỏ đường viền của ô input */
+  padding: 10px; /* Thiết lập padding cho ô input */
+  box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước tổng của ô input */
+}
+.navbar {
+  background-color: #b8b4b4;
+  color: rgb(11, 2, 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+}
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  color: #050101;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+
+
