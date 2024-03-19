@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Table1 from './table1';
 
 function App() {
-  const [students, setStudents] = useState([]);
-
-  const addStudent = (student) => {
-    setStudents([...students, student]);
-  };
-
   return (
     <div>
       <nav className="navbar">
@@ -20,7 +14,7 @@ function App() {
           
             </ul>
         </nav>
-      <Table1 students={students} addStudent={addStudent} />
+      <Table1/>
     </div>
   );
 }

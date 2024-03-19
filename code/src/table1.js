@@ -198,11 +198,11 @@ function Table1() {
             <tr >
               <td></td>
               <td><input type="text" name="name"  placeholder="Your name.." value={newStudent.name} onChange={handleChange} /></td>
-              <td><input type="text" name="date"  placeholder="Your name.." value={newStudent.date} onChange={handleChange} /></td>
-              <td><input type="text" name="mssv"  placeholder="Your name.." value={newStudent.mssv} onChange={handleChange} /></td>
-              <td><input type="text" name="email" placeholder="Your name.." value={newStudent.email} onChange={handleChange} /></td>
-              <td><input type="text" name="score" placeholder="Your name.." value={newStudent.score} onChange={handleChange} /></td>
-              <td><input type="text" name="locate"placeholder="Your name.." value={newStudent.locate} onChange={handleChange} /></td>
+              <td><input type="text" name="date"  placeholder="Date       " value={newStudent.date} onChange={handleChange} /></td>
+              <td><input type="text" name="mssv"  placeholder="MSSV       " value={newStudent.mssv} onChange={handleChange} /></td>
+              <td><input type="text" name="email" placeholder="Email      " value={newStudent.email} onChange={handleChange} /></td>
+              <td><input type="text" name="score" placeholder="Score      " value={newStudent.score} onChange={handleChange} /></td>
+              <td><input type="text" name="locate"placeholder="Locate     " value={newStudent.locate} onChange={handleChange} /></td>
               <td><button style={{ marginTop: '0px' }} className="button1" onClick={addStudent}>Add Student</button></td>
               <td><button style={{ marginTop: '0px' }} className="button1" onClick={updateStudent}>Update</button></td>
             </tr>
